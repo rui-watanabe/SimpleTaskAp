@@ -8,7 +8,8 @@
 - **タスクの表示**: すべてのタスクはリスト形式で表示され、ユーザーはそれぞれのタスクの詳細を確認できます。
 - **ローカルデータ保存**: タスクデータはデバイスにローカルに保存され、アプリを再起動してもデータが保持されます。
 
-## デモ動画
+## デモ動画（iPhone15）
+<div><video controls src="https://github.com/user-attachments/assets/ccb51b7d-2915-4d46-a1ba-60d3bc1b38cb" muted="false"></video></div>
 
 
 ## アーキテクチャの概要
