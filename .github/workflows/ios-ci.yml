@@ -1,0 +1,33 @@
+name: Swift CI
+
+on:
+  push:
+    branches:
+      - "develop"
+      - "ph*"
+  pull_request:
+    branches:
+      - "develop"
+      - "ph*"
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Xcode
+      run: sudo xcode-select -switch /Applications/Xcode.app
+
+    - name: Install SwiftLint
+      run: brew install swiftlint
+
+    - name: Run SwiftLint
+      run: swiftlint
+
+    - name: Build the project
+      run: xcodebuild clean build -scheme SimpleTaskApp -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest'
+
+    - name: Run tests
+      run: xcodebuild test -scheme SimpleTaskApp -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest'
