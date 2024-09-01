@@ -3,10 +3,12 @@ name: Swift CI
 on:
   push:
     branches:
+      - "main"
       - "develop"
       - "ph*"
   pull_request:
     branches:
+      - "main"
       - "develop"
       - "ph*"
 
