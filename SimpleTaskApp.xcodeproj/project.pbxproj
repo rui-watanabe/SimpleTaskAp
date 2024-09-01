@@ -8,12 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		C64E04532C8425970035EC59 /* SimpleTaskAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04522C8425970035EC59 /* SimpleTaskAppApp.swift */; };
-		C64E04552C8425970035EC59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04542C8425970035EC59 /* ContentView.swift */; };
 		C64E04572C8425980035EC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64E04562C8425980035EC59 /* Assets.xcassets */; };
 		C64E045A2C8425980035EC59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64E04592C8425980035EC59 /* Preview Assets.xcassets */; };
-		C64E04642C8425980035EC59 /* SimpleTaskAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04632C8425980035EC59 /* SimpleTaskAppTests.swift */; };
-		C64E046E2C8425980035EC59 /* SimpleTaskAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E046D2C8425980035EC59 /* SimpleTaskAppUITests.swift */; };
-		C64E04702C8425980035EC59 /* SimpleTaskAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E046F2C8425980035EC59 /* SimpleTaskAppUITestsLaunchTests.swift */; };
+		C64E048B2C8427570035EC59 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E048A2C8427570035EC59 /* TaskViewModel.swift */; };
+		C64E04932C8428780035EC59 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04922C8428780035EC59 /* TaskListView.swift */; };
+		C64E04952C8428890035EC59 /* TaskManagerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04942C8428890035EC59 /* TaskManagerTemplate.swift */; };
+		C64E04972C8428A00035EC59 /* TaskListOrganism.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04962C8428A00035EC59 /* TaskListOrganism.swift */; };
+		C64E04992C8428AD0035EC59 /* TaskInputFormMolecule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04982C8428AD0035EC59 /* TaskInputFormMolecule.swift */; };
+		C64E049B2C8428BD0035EC59 /* TextFieldAtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E049A2C8428BD0035EC59 /* TextFieldAtom.swift */; };
+		C64E049D2C8428C60035EC59 /* ButtonAtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E049C2C8428C60035EC59 /* ButtonAtom.swift */; };
+		C64E04A02C8429A80035EC59 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E049F2C8429A80035EC59 /* Task.swift */; };
+		C64E04A22C8429BD0035EC59 /* AddTaskUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04A12C8429BD0035EC59 /* AddTaskUseCase.swift */; };
+		C64E04A42C8429C80035EC59 /* DeleteTaskUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04A32C8429C80035EC59 /* DeleteTaskUseCase.swift */; };
+		C64E04A62C8429D40035EC59 /* GetTasksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04A52C8429D40035EC59 /* GetTasksUseCase.swift */; };
+		C64E04A82C8429E30035EC59 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04A72C8429E30035EC59 /* TaskRepository.swift */; };
+		C64E04AA2C8429EF0035EC59 /* LocalTaskDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04A92C8429EF0035EC59 /* LocalTaskDataSource.swift */; };
+		C64E04AC2C842D140035EC59 /* TaskInputDialogTaskListOrganism.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04AB2C842D140035EC59 /* TaskInputDialogTaskListOrganism.swift */; };
+		C64E04AE2C842D5C0035EC59 /* UpdateTaskUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04AD2C842D5C0035EC59 /* UpdateTaskUseCase.swift */; };
+		C64E04B02C8433F30035EC59 /* TaskRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04AF2C8433F30035EC59 /* TaskRepositoryTests.swift */; };
+		C64E04B52C84344D0035EC59 /* TaskUseCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04B42C84344D0035EC59 /* TaskUseCasesTests.swift */; };
+		C64E04B72C8434600035EC59 /* TaskViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04B62C8434600035EC59 /* TaskViewModelTests.swift */; };
+		C64E04BA2C8434B20035EC59 /* MockTaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04B92C8434B20035EC59 /* MockTaskRepository.swift */; };
+		C64E04BD2C8436790035EC59 /* SimpleTaskAppUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04BC2C8436790035EC59 /* SimpleTaskAppUITest.swift */; };
+		C64E04C12C8444400035EC59 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04C02C8444400035EC59 /* UserDefaults+Extension.swift */; };
+		C64E04C42C8444950035EC59 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E04C32C8444950035EC59 /* UserDefaults+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +54,32 @@
 /* Begin PBXFileReference section */
 		C64E044F2C8425970035EC59 /* SimpleTaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64E04522C8425970035EC59 /* SimpleTaskAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskAppApp.swift; sourceTree = "<group>"; };
-		C64E04542C8425970035EC59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C64E04562C8425980035EC59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C64E04592C8425980035EC59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C64E045F2C8425980035EC59 /* SimpleTaskAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTaskAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C64E04632C8425980035EC59 /* SimpleTaskAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskAppTests.swift; sourceTree = "<group>"; };
 		C64E04692C8425980035EC59 /* SimpleTaskAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTaskAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C64E046D2C8425980035EC59 /* SimpleTaskAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskAppUITests.swift; sourceTree = "<group>"; };
-		C64E046F2C8425980035EC59 /* SimpleTaskAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C64E048A2C8427570035EC59 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		C64E04922C8428780035EC59 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		C64E04942C8428890035EC59 /* TaskManagerTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTemplate.swift; sourceTree = "<group>"; };
+		C64E04962C8428A00035EC59 /* TaskListOrganism.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListOrganism.swift; sourceTree = "<group>"; };
+		C64E04982C8428AD0035EC59 /* TaskInputFormMolecule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputFormMolecule.swift; sourceTree = "<group>"; };
+		C64E049A2C8428BD0035EC59 /* TextFieldAtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAtom.swift; sourceTree = "<group>"; };
+		C64E049C2C8428C60035EC59 /* ButtonAtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAtom.swift; sourceTree = "<group>"; };
+		C64E049F2C8429A80035EC59 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C64E04A12C8429BD0035EC59 /* AddTaskUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskUseCase.swift; sourceTree = "<group>"; };
+		C64E04A32C8429C80035EC59 /* DeleteTaskUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTaskUseCase.swift; sourceTree = "<group>"; };
+		C64E04A52C8429D40035EC59 /* GetTasksUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTasksUseCase.swift; sourceTree = "<group>"; };
+		C64E04A72C8429E30035EC59 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		C64E04A92C8429EF0035EC59 /* LocalTaskDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTaskDataSource.swift; sourceTree = "<group>"; };
+		C64E04AB2C842D140035EC59 /* TaskInputDialogTaskListOrganism.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputDialogTaskListOrganism.swift; sourceTree = "<group>"; };
+		C64E04AD2C842D5C0035EC59 /* UpdateTaskUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTaskUseCase.swift; sourceTree = "<group>"; };
+		C64E04AF2C8433F30035EC59 /* TaskRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepositoryTests.swift; sourceTree = "<group>"; };
+		C64E04B42C84344D0035EC59 /* TaskUseCasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUseCasesTests.swift; sourceTree = "<group>"; };
+		C64E04B62C8434600035EC59 /* TaskViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModelTests.swift; sourceTree = "<group>"; };
+		C64E04B92C8434B20035EC59 /* MockTaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTaskRepository.swift; sourceTree = "<group>"; };
+		C64E04BC2C8436790035EC59 /* SimpleTaskAppUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTaskAppUITest.swift; sourceTree = "<group>"; };
+		C64E04C02C8444400035EC59 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		C64E04C32C8444950035EC59 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +130,9 @@
 		C64E04512C8425970035EC59 /* SimpleTaskApp */ = {
 			isa = PBXGroup;
 			children = (
-				C64E04522C8425970035EC59 /* SimpleTaskAppApp.swift */,
-				C64E04542C8425970035EC59 /* ContentView.swift */,
+				C64E047E2C8425BD0035EC59 /* Data */,
+				C64E047D2C8425B40035EC59 /* Domain */,
+				C64E047C2C8425A60035EC59 /* Presentation */,
 				C64E04562C8425980035EC59 /* Assets.xcassets */,
 				C64E04582C8425980035EC59 /* Preview Content */,
 			);
@@ -113,7 +150,12 @@
 		C64E04622C8425980035EC59 /* SimpleTaskAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				C64E04632C8425980035EC59 /* SimpleTaskAppTests.swift */,
+				C64E04BF2C84441D0035EC59 /* Extensions */,
+				C64E04B82C84349A0035EC59 /* Mock */,
+				C64E04B32C8434060035EC59 /* Presentation */,
+				C64E04B22C8433FE0035EC59 /* Domain */,
+				C64E04B12C8433FA0035EC59 /* Data */,
+				C64E04AF2C8433F30035EC59 /* TaskRepositoryTests.swift */,
 			);
 			path = SimpleTaskAppTests;
 			sourceTree = "<group>";
@@ -121,10 +163,182 @@
 		C64E046C2C8425980035EC59 /* SimpleTaskAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C64E046D2C8425980035EC59 /* SimpleTaskAppUITests.swift */,
-				C64E046F2C8425980035EC59 /* SimpleTaskAppUITestsLaunchTests.swift */,
+				C64E04C22C84448A0035EC59 /* Extensions */,
+				C64E04BC2C8436790035EC59 /* SimpleTaskAppUITest.swift */,
 			);
 			path = SimpleTaskAppUITests;
+			sourceTree = "<group>";
+		};
+		C64E047C2C8425A60035EC59 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C64E049E2C84294E0035EC59 /* App */,
+				C64E04902C84284E0035EC59 /* Pages */,
+				C64E048F2C84284C0035EC59 /* Templates */,
+				C64E048E2C8428480035EC59 /* Organisms */,
+				C64E048D2C84283C0035EC59 /* Molecules */,
+				C64E048C2C8428260035EC59 /* Atoms */,
+				C64E04842C8426A90035EC59 /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C64E047D2C8425B40035EC59 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04822C8426040035EC59 /* UseCases */,
+				C64E04812C8425FC0035EC59 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C64E047E2C8425BD0035EC59 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04802C8425D50035EC59 /* Repositories */,
+				C64E047F2C8425CD0035EC59 /* DataSources */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C64E047F2C8425CD0035EC59 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04A92C8429EF0035EC59 /* LocalTaskDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		C64E04802C8425D50035EC59 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04A72C8429E30035EC59 /* TaskRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C64E04812C8425FC0035EC59 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C64E049F2C8429A80035EC59 /* Task.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C64E04822C8426040035EC59 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04A12C8429BD0035EC59 /* AddTaskUseCase.swift */,
+				C64E04A32C8429C80035EC59 /* DeleteTaskUseCase.swift */,
+				C64E04A52C8429D40035EC59 /* GetTasksUseCase.swift */,
+				C64E04AD2C842D5C0035EC59 /* UpdateTaskUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C64E04842C8426A90035EC59 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C64E048A2C8427570035EC59 /* TaskViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C64E048C2C8428260035EC59 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				C64E049A2C8428BD0035EC59 /* TextFieldAtom.swift */,
+				C64E049C2C8428C60035EC59 /* ButtonAtom.swift */,
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
+		C64E048D2C84283C0035EC59 /* Molecules */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04982C8428AD0035EC59 /* TaskInputFormMolecule.swift */,
+			);
+			path = Molecules;
+			sourceTree = "<group>";
+		};
+		C64E048E2C8428480035EC59 /* Organisms */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04AB2C842D140035EC59 /* TaskInputDialogTaskListOrganism.swift */,
+				C64E04962C8428A00035EC59 /* TaskListOrganism.swift */,
+			);
+			path = Organisms;
+			sourceTree = "<group>";
+		};
+		C64E048F2C84284C0035EC59 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04942C8428890035EC59 /* TaskManagerTemplate.swift */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		C64E04902C84284E0035EC59 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04922C8428780035EC59 /* TaskListView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		C64E049E2C84294E0035EC59 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04522C8425970035EC59 /* SimpleTaskAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C64E04B12C8433FA0035EC59 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C64E04B22C8433FE0035EC59 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04B42C84344D0035EC59 /* TaskUseCasesTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C64E04B32C8434060035EC59 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04B62C8434600035EC59 /* TaskViewModelTests.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C64E04B82C84349A0035EC59 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04B92C8434B20035EC59 /* MockTaskRepository.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		C64E04BF2C84441D0035EC59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04C02C8444400035EC59 /* UserDefaults+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C64E04C22C84448A0035EC59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C64E04C32C8444950035EC59 /* UserDefaults+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +351,7 @@
 				C64E044B2C8425970035EC59 /* Sources */,
 				C64E044C2C8425970035EC59 /* Frameworks */,
 				C64E044D2C8425970035EC59 /* Resources */,
+				C64E04BE2C8440BE0035EC59 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -198,10 +413,12 @@
 					};
 					C64E045E2C8425980035EC59 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = C64E044E2C8425970035EC59;
 					};
 					C64E04682C8425980035EC59 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = C64E044E2C8425970035EC59;
 					};
 				};
@@ -252,13 +469,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C64E04BE2C8440BE0035EC59 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C64E044B2C8425970035EC59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C64E04552C8425970035EC59 /* ContentView.swift in Sources */,
+				C64E04A22C8429BD0035EC59 /* AddTaskUseCase.swift in Sources */,
+				C64E04AE2C842D5C0035EC59 /* UpdateTaskUseCase.swift in Sources */,
+				C64E04972C8428A00035EC59 /* TaskListOrganism.swift in Sources */,
+				C64E04952C8428890035EC59 /* TaskManagerTemplate.swift in Sources */,
+				C64E04A42C8429C80035EC59 /* DeleteTaskUseCase.swift in Sources */,
+				C64E049D2C8428C60035EC59 /* ButtonAtom.swift in Sources */,
+				C64E049B2C8428BD0035EC59 /* TextFieldAtom.swift in Sources */,
 				C64E04532C8425970035EC59 /* SimpleTaskAppApp.swift in Sources */,
+				C64E04A62C8429D40035EC59 /* GetTasksUseCase.swift in Sources */,
+				C64E04AC2C842D140035EC59 /* TaskInputDialogTaskListOrganism.swift in Sources */,
+				C64E048B2C8427570035EC59 /* TaskViewModel.swift in Sources */,
+				C64E04A82C8429E30035EC59 /* TaskRepository.swift in Sources */,
+				C64E04932C8428780035EC59 /* TaskListView.swift in Sources */,
+				C64E04A02C8429A80035EC59 /* Task.swift in Sources */,
+				C64E04992C8428AD0035EC59 /* TaskInputFormMolecule.swift in Sources */,
+				C64E04AA2C8429EF0035EC59 /* LocalTaskDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +519,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C64E04642C8425980035EC59 /* SimpleTaskAppTests.swift in Sources */,
+				C64E04BA2C8434B20035EC59 /* MockTaskRepository.swift in Sources */,
+				C64E04B72C8434600035EC59 /* TaskViewModelTests.swift in Sources */,
+				C64E04B52C84344D0035EC59 /* TaskUseCasesTests.swift in Sources */,
+				C64E04C12C8444400035EC59 /* UserDefaults+Extension.swift in Sources */,
+				C64E04B02C8433F30035EC59 /* TaskRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +531,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C64E046E2C8425980035EC59 /* SimpleTaskAppUITests.swift in Sources */,
-				C64E04702C8425980035EC59 /* SimpleTaskAppUITestsLaunchTests.swift in Sources */,
+				C64E04C42C8444950035EC59 /* UserDefaults+Extension.swift in Sources */,
+				C64E04BD2C8436790035EC59 /* SimpleTaskAppUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +732,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -483,6 +741,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.SimpleTaskAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTaskApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleTaskApp";
@@ -494,6 +753,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -512,6 +772,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -519,6 +780,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.SimpleTaskAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SimpleTaskApp;
@@ -529,6 +791,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
