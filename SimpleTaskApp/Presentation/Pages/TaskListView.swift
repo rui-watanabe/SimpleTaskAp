@@ -24,4 +24,3 @@ struct TaskListView_Previews: PreviewProvider {
         TaskListView()
     }
 }
-
