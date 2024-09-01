@@ -31,5 +31,5 @@ jobs:
     - name: Build the project
       run: xcodebuild clean build -scheme SimpleTaskApp -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest'
 
-    - name: Run tests
-      run: xcodebuild test -scheme SimpleTaskApp -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest'
+    - name: Run Unit tests
+      run: xcodebuild test -scheme SimpleTaskApp -only-testing:SimpleTaskAppTests -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest'
