@@ -20,4 +20,3 @@ struct AddTaskUseCase {
         repository.addTask(newTask)
     }
 }
-
