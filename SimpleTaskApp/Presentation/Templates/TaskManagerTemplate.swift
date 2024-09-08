@@ -66,6 +66,11 @@ struct TaskManagerTemplate: View {
 // プレビュー用コード
 struct TaskManagerTemplate_Previews: PreviewProvider {
     static var previews: some View {
-        TaskManagerTemplate(viewModel: TaskViewModel(taskRepository: LocalTaskDataSource()))
+        TaskManagerTemplate(viewModel: TaskViewModel(
+            addTaskUseCase: AddTaskUseCase(repository: LocalTaskDataSource()),
+            updateTaskUseCase: UpdateTaskUseCase(repository: LocalTaskDataSource()),
+            deleteTaskUseCase: DeleteTaskUseCase(repository: LocalTaskDataSource()),
+            getTasksUseCase: GetTasksUseCase(repository: LocalTaskDataSource())
+        ))
     }
 }

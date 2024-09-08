@@ -9,7 +9,12 @@ import SwiftUI
 
 // ページ全体を表現するコンポーネント
 struct TaskListView: View {
-    @StateObject var viewModel = TaskViewModel(taskRepository: LocalTaskDataSource())
+    @StateObject var viewModel = TaskViewModel(
+        addTaskUseCase: AddTaskUseCase(repository: LocalTaskDataSource()),
+        updateTaskUseCase: UpdateTaskUseCase(repository: LocalTaskDataSource()),
+        deleteTaskUseCase: DeleteTaskUseCase(repository: LocalTaskDataSource()),
+        getTasksUseCase: GetTasksUseCase(repository: LocalTaskDataSource())
+    )
     
     var body: some View {
         NavigationView {
