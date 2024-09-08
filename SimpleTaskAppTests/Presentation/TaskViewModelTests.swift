@@ -16,7 +16,12 @@ class TaskViewModelTests: XCTestCase {
     override func setUpWithError() throws {
         UserDefaults.resetDefaults()
         repository = MockTaskRepository()
-        viewModel = TaskViewModel(taskRepository: repository)
+        viewModel = TaskViewModel(
+            addTaskUseCase: AddTaskUseCase(repository: LocalTaskDataSource()),
+            updateTaskUseCase: UpdateTaskUseCase(repository: LocalTaskDataSource()),
+            deleteTaskUseCase: DeleteTaskUseCase(repository: LocalTaskDataSource()),
+            getTasksUseCase: GetTasksUseCase(repository: LocalTaskDataSource())
+        )
     }
     
     override func tearDownWithError() throws {
