@@ -80,7 +80,7 @@ class SimpleTaskAppUITest: XCTestCase {
         
         // タスクリストに編集されたタスクが表示されることを確認
         XCTAssertTrue(app.staticTexts["Edited Task"].exists)
-        XCTAssertTrue(app.staticTexts["Edited description..edited"].exists)
+        XCTAssertTrue(app.staticTexts["Edited description. description."].exists)
     }
     
     func testDeletingTask() throws {

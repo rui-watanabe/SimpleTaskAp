@@ -16,7 +16,12 @@ class TaskViewModelTests: XCTestCase {
     override func setUpWithError() throws {
         UserDefaults.resetDefaults()
         repository = MockTaskRepository()
-        viewModel = TaskViewModel(taskRepository: repository)
+        viewModel = TaskViewModel(
+            addTaskUseCase: AddTaskUseCase(repository: LocalTaskDataSource()),
+            updateTaskUseCase: UpdateTaskUseCase(repository: LocalTaskDataSource()),
+            deleteTaskUseCase: DeleteTaskUseCase(repository: LocalTaskDataSource()),
+            getTasksUseCase: GetTasksUseCase(repository: LocalTaskDataSource())
+        )
     }
     
     override func tearDownWithError() throws {
@@ -34,11 +39,11 @@ class TaskViewModelTests: XCTestCase {
     }
 
     func testEditTask() {
-        let task = Task(id: UUID(), title: "Old Task", description: "Old Description")
-        repository.addTask(task)
-        viewModel.tasks = repository.fetchTasks()
-        viewModel.selectedTask = task
+        viewModel.newTaskTitle = "New Task"
+        viewModel.newTaskDescription = "This is a new task."
+        viewModel.addTask()
         
+        viewModel.selectedTask = viewModel.tasks[0]
         viewModel.newTaskTitle = "Updated Task"
         viewModel.newTaskDescription = "Updated Description"
         viewModel.editTask()
