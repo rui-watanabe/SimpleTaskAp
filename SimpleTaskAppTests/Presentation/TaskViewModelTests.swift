@@ -39,11 +39,11 @@ class TaskViewModelTests: XCTestCase {
     }
 
     func testEditTask() {
-        let task = Task(id: UUID(), title: "Old Task", description: "Old Description")
-        repository.addTask(task)
-        viewModel.tasks = repository.fetchTasks()
-        viewModel.selectedTask = task
+        viewModel.newTaskTitle = "New Task"
+        viewModel.newTaskDescription = "This is a new task."
+        viewModel.addTask()
         
+        viewModel.selectedTask = viewModel.tasks[0]
         viewModel.newTaskTitle = "Updated Task"
         viewModel.newTaskDescription = "Updated Description"
         viewModel.editTask()
